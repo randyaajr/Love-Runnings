@@ -57,9 +57,11 @@ h2 {
     width: 100%;
     background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
     
+    /* Landing page zoom */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+    /* /Landing page zoom */
 }
 
 #hero-outer {
@@ -69,6 +71,7 @@ h2 {
     position: relative;
 }
 
+/* Landing page zoom keyframes */
 @keyframes hero-zoom {
     from{
         transform: scale(1);
@@ -76,6 +79,7 @@ h2 {
     to{
         transform: scale(1.1);
     }
+/* /Landing page zoom keyframes */
 }
 
 #cover-text, #cover-text h2 {
@@ -322,7 +326,8 @@ footer {
     border-radius: 2px;
   }
   .text-input:hover {
-    border: #f16c6b;
+    border: 1px solid #f16c6b;
+    background-color: rgba(255, 230, 254, 0.11);
   }
   .join-button {
     margin-top: 20px;
@@ -347,20 +352,21 @@ footer {
     height: 900px;
 }  
 
-
+/* -------- Scrollbar custom ---------- */
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(29, 29, 29);
-    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(29, 29, 29, 0.322);
+    border-radius: 5px;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(83, 78, 78);
+    background: rgba(112, 112, 112, 0.425);
     border-radius: 10px;
   }
+  /* -------- /Scrollbar custom ---------- */
